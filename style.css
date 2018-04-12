@@ -4,7 +4,7 @@ body {
 
 .header {
     min-height: 100vh;
-    background-image: linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%);
+    background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -43,8 +43,8 @@ body {
     font-size: 0.75rem;
 }
 
-.text-yellow {
-    color: orange;
+.text-accent {
+    color: #5ee7df;
 }
 
 .text-light {
@@ -66,7 +66,7 @@ body {
 }
 
 .social a:hover {
-    color: orange;
+    color: #b490ca;
 }
 
 a {
