@@ -57,6 +57,7 @@ background-blend-mode: multiply;
 .h3 {
     font-size: 3rem;
     line-height: 4rem;
+    font-family: Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
 .h4 {
