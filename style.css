@@ -104,3 +104,8 @@ a,
 a:visited {
     color: inherit;
 }
+
+.logo {
+    margin-bottom: 4rem;
+    height: 8rem;
+}
