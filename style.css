@@ -26,7 +26,7 @@ body {
 
 .header {
     min-height: 100vh;
-    background-image: #603E2D;
+    background-color: #603E2D;
     display: flex;
     justify-content: center;
     align-items: center;
