@@ -21,29 +21,12 @@ html {
 }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
-    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
 .header {
   min-height: 100vh;
-  background-color: #797572;
-  background-image: linear-gradient(
-      -173deg,
-      rgba(255, 255, 255, 0.2) 0%,
-      #000000 100%
-    ),
-    linear-gradient(
-      72deg,
-      rgba(255, 255, 255, 0.25) 25%,
-      rgba(0, 0, 0, 0.25) 100%
-    ),
-    radial-gradient(
-      47% 102%,
-      rgba(255, 255, 255, 0.5) 0%,
-      rgba(21, 24, 32, 0.6) 120%
-    );
-  background-blend-mode: multiply;
+  background-color: #462066;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -53,15 +36,6 @@ body {
 
 .block {
   display: block;
-}
-
-.h1,
-.h2,
-.h3,
-.h4,
-.h5,
-.h6 {
-  font-family: Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
 .h1 {
@@ -100,12 +74,12 @@ body {
   margin: 1em;
 }
 
-.text-accent {
-  color: #f8ca00;
+.text-primary {
+  color: #ffb85f;
 }
 
 .text-light {
-  color: rgba(255, 226, 95, 0.671);
+  color: #fcf4d9;
 }
 
 .social {
@@ -141,6 +115,13 @@ a:visited {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  font-size: 1.4rem;
+  padding: 10vh;
+}
+
+.bg-secondary {
+  background-color: #00aaa0;
 }
 
 .forms {
@@ -153,4 +134,42 @@ a:visited {
 
 .form {
   margin-bottom: 20px;
+  width: 600px;
+}
+
+.form-group {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.button,
+.input {
+  display: flex;
+  flex: 1 1 100%;
+  align-items: center;
+  height: 42px;
+  font-size: 1.2rem;
+  border-radius: 14px;
+  padding: 0 15px;
+}
+
+.input + .input,
+.input + .button {
+  margin-left: 10px;
+}
+
+.input {
+  border: 3px solid grey;
+  color: black;
+}
+
+.button {
+  border: 3px solid #462066;
+  color: #fcf4d9;
+  background-color: #462066;
+  flex-shrink: 2;
+  justify-content: center;
+  max-width: 120px;
 }
