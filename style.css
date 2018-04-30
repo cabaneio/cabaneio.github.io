@@ -1,118 +1,156 @@
 html {
-    font-size: 17px;
+  font-size: 17px;
 }
 
 @media (max-width: 800px) {
-    html {
-        font-size: 10px;
-    }
+  html {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 600px) {
-    html {
-        font-size: 10px;
-    }
+  html {
+    font-size: 10px;
+  }
 }
 
 @media (max-width: 500px) {
-    html {
-        font-size: 7px;
-    }
+  html {
+    font-size: 7px;
+  }
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 }
 
 .header {
-    min-height: 100vh;
-    background-color: #797572;
-    background-image: 
-        linear-gradient(-173deg, rgba(255,255,255,0.20) 0%, #000000 100%),
-        linear-gradient(72deg, rgba(255,255,255,0.25) 25%, rgba(0,0,0,0.25) 100%),
-        radial-gradient(47% 102%, rgba(255,255,255,0.50) 0%, rgba(21,24,32,0.60) 120%);
-background-blend-mode: multiply;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+  min-height: 100vh;
+  background-color: #797572;
+  background-image: linear-gradient(
+      -173deg,
+      rgba(255, 255, 255, 0.2) 0%,
+      #000000 100%
+    ),
+    linear-gradient(
+      72deg,
+      rgba(255, 255, 255, 0.25) 25%,
+      rgba(0, 0, 0, 0.25) 100%
+    ),
+    radial-gradient(
+      47% 102%,
+      rgba(255, 255, 255, 0.5) 0%,
+      rgba(21, 24, 32, 0.6) 120%
+    );
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
 }
 
-
 .block {
-    display: block;
+  display: block;
+}
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  font-family: Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
 }
 
 .h1 {
-    font-size: 8rem;
-    line-height: 12rem;
+  font-size: 8rem;
+  line-height: 12rem;
 }
 
 .h2 {
-    font-size: 4rem;
-    line-height: 5rem;
+  font-size: 4rem;
+  line-height: 5rem;
 }
 
 .h3 {
-    font-size: 3rem;
-    line-height: 4rem;
-    font-family: Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+  font-size: 3rem;
+  line-height: 4rem;
 }
 
 .h4 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .h5 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 
 .h6 {
-    font-size: 0.75rem;
+  font-size: 0.75rem;
 }
 
 .ph3 {
-    padding-left: 3em;
-    padding-right: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+}
+
+.m1 {
+  margin: 1em;
 }
 
 .text-accent {
-    color: #F8CA00;
+  color: #f8ca00;
 }
 
 .text-light {
-    color: rgba(255, 226, 95, 0.671);
-}
-
-.title {
-    margin-bottom: 120px;
+  color: rgba(255, 226, 95, 0.671);
 }
 
 .social {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .social a {
-    margin-left: 30px;
-    margin-right: 30px;
-    transition: color 260ms ease-in-out;
+  margin-left: 30px;
+  margin-right: 30px;
+  transition: color 260ms ease-in-out;
 }
 
 .social a:hover {
-    color: #ebc8db;
+  color: #ebc8db;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 a,
 a:visited {
-    color: inherit;
+  color: inherit;
 }
 
 .logo {
-    margin-bottom: 4rem;
-    height: 8rem;
+  margin-bottom: 4rem;
+  height: 8rem;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.forms {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.form {
+  margin-bottom: 20px;
 }
