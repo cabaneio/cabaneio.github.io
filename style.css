@@ -25,7 +25,7 @@ body {
 }
 
 .header {
-  min-height: 100vh;
+  min-height: 90vh;
   background-color: #462066;
   display: flex;
   justify-content: space-evenly;
@@ -117,7 +117,7 @@ a:visited {
   align-items: center;
   text-align: center;
   font-size: 1.4rem;
-  padding: 10vh;
+  padding: 1vh;
 }
 
 .bg-secondary {
