@@ -40,40 +40,43 @@
         </div>
 
         <div>
-            <h3 class="h4 text-primary ph3" style="max-width: 700px;">Automne 2018 (Détails à venir)</h2>
+            <h3 class="h4 text-primary ph3" style="max-width: 700px;">Septembre 2018 (Détails à venir)</h2>
         </div>
     </header>
     <section class="section bg-secondary text-light">
         <h3 class="h4 m1">Intéressé?👇</h3>
 
         <div class="forms">
-            <form action="https://send.pageclip.co/5ifCRM0rsZykTzCIsmnZRGN74GSu1WH2/presenters" class="pageclip-form form" method="post">
+            <form action="https://send.pageclip.co/5ifCRM0rsZykTzCIsmnZRGN74GSu1WH2/presenters" class="pageclip-form form" method="post"
+                id="attending">
                 <div class="m1">
                     J'aimerais être notifié quand les billets seront disponibles.
                 </div>
                 <div class="form-group">
                     <input type="hidden" name="presenting" value="false">
                     <input type="hidden" name="subject" value="">
-                    <input type="text" name="name" placeholder="Prénom" class="input" />
-                    <input type="email" name="email" placeholder="Courriel" class="input" />
+                    <input type="text" name="name" placeholder="Prénom" class="input" required />
+                    <input type="email" name="email" placeholder="Courriel" class="input" required />
                     <button type="submit" class="pageclip-form__submit button">
                         Envoyer
                     </button>
                 </div>
         </div>
         </form>
-        <form action="https://send.pageclip.co/5ifCRM0rsZykTzCIsmnZRGN74GSu1WH2/presenters" class="pageclip-form form" method="post">
+        <form action="" class="pageclip-form form" method="post" id="presenting">
             <div class="m1">
                 J'aimerais présenter à la conférence.
             </div>
             <div>
                 <div class="form-group">
-                    <input type="text" name="name" placeholder="Prénom" class="input" />
-                    <input type="email" name="email" placeholder="Courriel" class="input" />
+                    <input type="text" name="name" placeholder="Prénom" class="input" required />
+                    <input type="email" name="email" placeholder="Courriel" class="input" required />
                 </div>
                 <input type="hidden" name="presenting" value="true">
                 <div class="form-group">
-                    <input type="text" name="subject" placeholder="Sujet de la conférence" class="input">
+                    <textarea type="text" name="subject" placeholder="Sujet de la conférence" class="input textarea"></textarea>
+                </div>
+                <div class="form-group">
                     <button type="submit" class="pageclip-form__submit button">
                         Envoyer
                     </button>
@@ -81,8 +84,15 @@
             </div>
         </form>
         </div>
+        <section id="thanks" class="section bg-secondary text-light fill" style="display: none">
+            <h3 class="h4 m1">Merci</h3>
+        </section>
+        <section id="error" class="section bg-secondary text-light fill" style="display: none">
+            <h3 class="h4 m1">Une erreur est survenue... Réessayer plus tard.</h3>
+        </section>
     </section>
     <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="./script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117489105-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];

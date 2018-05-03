@@ -87,8 +87,8 @@ body {
 }
 
 .social a {
-  margin-left: 30px;
-  margin-right: 30px;
+  margin-left: 3rem;
+  margin-right: 3rem;
   transition: color 260ms ease-in-out;
 }
 
@@ -111,6 +111,7 @@ a:visited {
 }
 
 .section {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,11 +138,25 @@ a:visited {
   width: 600px;
 }
 
+@media (max-width: 800px) {
+  .form {
+    width: auto;
+    max-width: 310px;
+    padding: 20px 0;
+  }
+}
+
 .form-group {
   display: flex;
   flex: 1;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+@media (max-width: 800px) {
+  .form-group {
+    flex-wrap: wrap;
+  }
 }
 
 .button,
@@ -160,9 +175,22 @@ a:visited {
   margin-left: 10px;
 }
 
+@media (max-width: 800px) {
+  .input + .input,
+  .input + .button {
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+
 .input {
-  border: 3px solid grey;
+  border: 3px solid #60d4c7;
   color: black;
+}
+
+.textarea {
+  padding: 15px 20px;
+  min-height: 3em;
 }
 
 .button {
@@ -172,4 +200,12 @@ a:visited {
   flex-shrink: 2;
   justify-content: center;
   max-width: 120px;
+}
+
+.fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
