@@ -8,7 +8,9 @@ var config = {
     thanksEl.style.display = "flex";
   },
   onResponse: function(error, response) {
-    errorEl.style.display = "flex";
+    if (error) {
+      errorEl.style.display = "flex";
+    }
   },
   successTemplate: "<span>Thank you!</span>"
 };
