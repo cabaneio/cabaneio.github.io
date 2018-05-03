@@ -12,7 +12,7 @@ var config = {
       errorEl.style.display = "flex";
     }
   },
-  successTemplate: "<span>Thank you!</span>"
+  successTemplate: ""
 };
 
 Pageclip.form(assistingForm, config);
