@@ -1,19 +1,24 @@
-var assistingForm = document.querySelector("#attending");
-var presentingForm = document.querySelector("#presenting");
-var thanksEl = document.querySelector("#thanks");
-var errorEl = document.querySelector("#error");
+const attendingForm = document.querySelector("#attending")
 
-var config = {
+const config = {
   onSubmit: function(event) {
-    thanksEl.style.display = "flex";
+    iziToast.success({
+        title: 'Merci'
+    })
   },
   onResponse: function(error, response) {
     if (error) {
-      errorEl.style.display = "flex";
+      iziToast.error({
+          title: 'Erreur',
+          message: 'Impossible de soumettre le formulaire'
+      })
     }
   },
   successTemplate: ""
-};
+}
 
-Pageclip.form(assistingForm, config);
-Pageclip.form(presentingForm, config);
+iziToast.settings({
+  timeout: 2000
+})
+
+Pageclip.form(attendingForm, config)

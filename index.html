@@ -5,108 +5,120 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Cabane Conférence</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
-        crossorigin="anonymous">
+    <title>Cabane.IO</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:100,200,800">
     <link rel="stylesheet" href="https://s.pageclip.co/v1/pageclip.css" media="screen">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/css/iziToast.min.css">
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" sizes="16x16" href="/favicon.ico?v=2">
 </head>
 
 <body>
-    <header class="header">
-        <div class="title">
-            <svg class="logo" viewBox="0 0 427 78" xmlns="http://www.w3.org/2000/svg">
-                <path d="M224 77.8h-8.7V46.1l-16.4-21.7h-7.8l-15.4 23.3v30.1H167V45.1l19.4-29.4h16.8L224 43.2zm-57-39.5V17.9L177.8.8v20.8L167 38.3zm3-19.5V29l4.8-8.3V10.3l-4.8 8.5zM28.3 25.4c-5.5 0-9.9 2-13.1 5.9-3.2 3.9-4.8 9.4-4.8 16.3 0 7.2 1.5 12.7 4.6 16.4 3.1 3.7 7.5 5.6 13.3 5.6 2.5 0 4.9-.2 7.3-.7 2.3-.5 4.8-1.1 7.3-1.9v8.3c-4.6 1.8-9.9 2.6-15.8 2.6-8.6 0-15.3-2.6-19.9-7.9C2.6 64.8.3 57.3.3 47.5c0-6.1 1.1-11.5 3.4-16.1 2.2-4.6 5.5-8.1 9.8-10.6 4.3-2.5 9.2-3.7 15-3.7 6 0 11.6 1.3 16.7 3.8l-3.5 8c-2-.9-4.1-1.8-6.3-2.5-2.3-.6-4.6-1-7.1-1zM95.5 77l-5.9-16.4H67L61.2 77H51l22.1-59.3h10.5L105.7 77H95.5zm-8.4-24.7l-5.5-16.1c-.4-1.1-1-2.8-1.7-5.1s-1.2-4-1.5-5.1c-.7 3.3-1.8 6.9-3.2 10.9l-5.3 15.4h17.2zM113.7 18h17.5c8.1 0 14 1.2 17.6 3.6 3.6 2.4 5.4 6.1 5.4 11.2 0 3.4-.9 6.3-2.7 8.6-1.8 2.3-4.3 3.7-7.7 4.3v.4c4.1.8 7.2 2.3 9.1 4.6 2 2.3 2.9 5.4 2.9 9.4 0 5.3-1.9 9.5-5.6 12.5-3.7 3-8.9 4.5-15.4 4.5h-21.3V18h.2zm9.7 24.4h9.3c4 0 7-.6 8.8-1.9 1.9-1.3 2.8-3.5 2.8-6.5 0-2.8-1-4.8-3-6-2-1.2-5.2-1.9-9.6-1.9h-8.4v16.3h.1zm0 7.8v18.7h10.3c4 0 7.1-.8 9.1-2.3 2.1-1.5 3.1-4 3.1-7.3 0-3.1-1.1-5.3-3.2-6.8s-5.3-2.2-9.6-2.2h-9.7v-.1zm160.8 26.5h-11.8l-29-47.1h-.4l.2 2.6c.4 5 .6 9.6.6 13.7v30.7H235V17.5h11.7l29 46.8h.2c-.1-.6-.2-2.9-.3-6.8-.2-3.9-.2-6.9-.2-9.1V17.5h8.8v59.2zm44.3 0h-33.4V17.6h33.4v8.2h-23.7v16.1H327V50h-22.3v18.5h23.7v8.2zm11-5.1c0-2 .5-3.5 1.5-4.5 1-1.1 2.5-1.6 4.4-1.6 2 0 3.5.5 4.5 1.6s1.5 2.6 1.5 4.5-.5 3.4-1.6 4.5c-1 1.1-2.5 1.7-4.5 1.7-1.9 0-3.4-.6-4.4-1.7-.9-1-1.4-2.5-1.4-4.5zm22.9-51.4c0-1.7.5-3 1.4-3.9.9-.9 2.3-1.4 4-1.4 1.7 0 3 .5 3.9 1.4.9.9 1.4 2.2 1.4 3.9 0 1.6-.5 2.9-1.4 3.8-.9.9-2.2 1.4-3.9 1.4-1.7 0-3-.5-4-1.4-.9-1-1.4-2.2-1.4-3.8zm10.1 56.5H363V32h9.5v44.7zm53.8-22.5c0 7.3-1.9 13-5.6 17.1-3.7 4.1-9 6.1-15.6 6.1-4.2 0-7.9-.9-11.1-2.8-3.2-1.9-5.7-4.6-7.4-8.1-1.7-3.5-2.6-7.6-2.6-12.3 0-7.2 1.9-12.9 5.6-17 3.7-4.1 9-6.1 15.7-6.1 6.5 0 11.6 2.1 15.3 6.2 3.8 4.3 5.7 9.9 5.7 16.9zm-32.5 0c0 10.3 3.8 15.5 11.4 15.5 7.5 0 11.3-5.2 11.3-15.5 0-10.2-3.8-15.3-11.4-15.3-4 0-6.9 1.3-8.7 4-1.7 2.6-2.6 6.4-2.6 11.3z"
-                    fill="#ffb85f" />
-            </svg>
-            <div>
-                <h2 class="h3 text-primary ph3" style="max-width: 700px;">La conférence pour développeurs à Québec</h2>
-            </div>
-
-            <div>
-                <p class="description">
-                    La ville de Québec est en pleine ébullition! L'innovation, l'ambition et la technologie y sont en pleine croissance. Malheureusement,
-                    il n'y a pas de conférence sur le développement informatique à la hauteur de la ville.
-                    <br>
-                    <br> C'est ce que
-                    <strong>Cabane.io</strong> vient régler! Joins-toi à nous et de nombreux autres passionnés pour échanger sur
-                    le cloud, les frameworks, les librairies et les outils qui font vibrer la communauté de développeurs
-                    à Québec.
-                </p>
-            </div>
-            <div>
-                <h3 class="h5 text-primary ph3" style="max-width: 700px; margin-bottom: 3rem;">Septembre 2018 (Détails à venir)</h2>
-            </div>
+    <header class="header bg-primary">
+        <div class="header-name text-primary">
+            <span class="uppercase">Cabane<span class="text-secondary">.IO</span></span>
         </div>
-
-        <div class="social text-primary">
-            <a href="https://github.com/cabaneio">
-                <i class="fab fa-github"></i>
-            </a>
-            <a href="https://www.facebook.com/cabaneio/">
-                <i class="fab fa-facebook"></i>
-            </a>
-            <a href="https://twitter.com/cabaneio">
-                <i class="fab fa-twitter"></i>
-            </a>
-            <a href="mailto://info@cabane.io">
-                <i class="fas fa-envelope"></i>
-            </a>
+        <div>
+            <h2 class="h3 text-primary align-left uppercase" style="max-width: 800px;">La conférence pour développeurs à Québec</h2>
         </div>
-
     </header>
-    <section class="section bg-secondary text-light">
-        <h3 class="h4 m1">Intéressé?👇</h3>
-
-        <div class="forms">
-            <form action="https://send.pageclip.co/5ifCRM0rsZykTzCIsmnZRGN74GSu1WH2/presenters" class="pageclip-form form" method="post"
-                id="attending">
-                <div class="m1">
-                    J'aimerais être notifié quand les billets seront disponibles.
-                </div>
-                <div class="form-group">
-                    <input type="hidden" name="presenting" value="false">
-                    <input type="hidden" name="subject" value="">
-                    <input type="text" name="name" placeholder="Prénom" class="input" required />
-                    <input type="email" name="email" placeholder="Courriel" class="input" required />
-                    <button type="submit" class="pageclip-form__submit button">
-                        Envoyer
-                    </button>
-                </div>
+    <section class="section">
+        <div class="section-cube bg-ternary"></div>
+        <div class="section-container">
+            <h2 class="h3 text-ternary align-left uppercase">Nous sommes des passionnés</h2>
         </div>
-        </form>
-        <form action="https://send.pageclip.co/5ifCRM0rsZykTzCIsmnZRGN74GSu1WH2/presenters" class="pageclip-form form" method="post"
-            id="presenting">
-            <div class="m1">
-                J'aimerais présenter à la conférence.
-            </div>
-            <div>
-                <div class="form-group">
-                    <input type="text" name="name" placeholder="Prénom" class="input" required />
-                    <input type="email" name="email" placeholder="Courriel" class="input" required />
-                </div>
-                <input type="hidden" name="presenting" value="true">
-                <div class="form-group">
-                    <textarea type="text" name="subject" placeholder="Sujet de la présentation" class="input textarea"></textarea>
-                </div>
-                <div class="form-group">
-                    <button type="submit" class="pageclip-form__submit button">
-                        Envoyer
-                    </button>
-                </div>
-            </div>
-        </form>
+        <div class="section-container">
+            <span>Cabane.IO, c'est une journée dédiée à nous, les développeurs de la ville de Québec. Viens échanger avec tes confrères sur une multitude de sujets dans une ambiance festive!</span>
         </div>
-        <section id="thanks" class="section bg-secondary text-light fill" style="display: none">
-            <h3 class="h4 m1">Merci</h3>
-        </section>
-        <section id="error" class="section bg-secondary text-light fill" style="display: none">
-            <h3 class="h4 m1">Une erreur est survenue... Réessayer plus tard.</h3>
-        </section>
+        <div class="bg-we-need-one-more-blue event-description uppercase">
+            <div class="text-primary">Date</div>
+            <div class="h5 text-secondary">19 janvier 2018</div>
+            <div class="text-primary">Prix</div>
+            <div class="h5 text-secondary">10$ | 27$ <p class="lowercase">(stationnement inclus)</p></div>
+            <div class="text-primary">Endroit</div>
+            <div class="h5 text-secondary">Musée des beaux arts</div>
+        </div>
     </section>
-    <script src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <section class="section section-no-right">
+        <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin-bottom: 10px;">
+            <div class="section-container">
+                <h2 class="h3 text-ternary align-left uppercase">Les conférences</h2>
+            </div>
+            <div class="section-container">
+                <div>
+                    <span>Des conférences couvrant tous les domaines - frontend, backend, devops, machine learning...</span>
+                </div>
+                <div style="font-size: 23px; margin-top: 45px;">
+                    <a class="uppercase" href="#register">Devenir conférencier</a>
+                </div>
+            </div>
+        </div>
+        <div class="bg-primary event-conferences">
+            <div class="h6 text-primary align-left uppercase">À venir...</div>
+        </div>
+    </section>
+    <section class="section">
+        <div class="section-cube left bg-lets-add-some-green"></div>
+        <div class="section-container right align-right">
+            <h2 class="h3 text-ternary uppercase">Nos sponsors</h2>
+        </div>
+        <div class="section-container right align-right">
+            <span>Un énorme merci à nos sponsors sans qui cette journée ne pourrait pas être possible. Venez les voir lors de la conférence, ils ont certainement plus d'un poste à combler!</span>
+        </div>
+        <div class="sponsors">
+            <div class="sponsor-block">
+                <img src="images/pleo.png">
+            </div>
+            <div class="sponsor-block">
+                <img src="images/coveo.png">
+            </div>
+            <div class="sponsor-block">
+                <img style="top: 145px;width: 290px;left: 90px;" src="images/xpertsea.png">
+            </div>
+        </div>
+    </section>
+    <section class="section form-section">
+        <a name="register"></a>
+        <div class="form-section-column">
+            <div class="section-container">
+                <h2 class="h3 text-ternary align-left uppercase">Vous êtes intéressé?</h2>
+            </div>
+            <div class="section-container">
+                <span>On souhaite votre présence! Laissez-nous votre email et nous contacterons pour les détails. Vous souhaitez présenter? Laissez-nous savoir votre idée de sujet et nous vous laisserons savoir si l'idée est retenue.</span>
+            </div>
+            <div class="map-container">
+                <div class="bg-secondary text-fournary">
+                    <i class="fa fa-map-marker fa-3x"></i>
+                    <h2 class="h5 align-left uppercase" style="max-width: 300px;">Voir la carte</h2>
+                </div>
+                <div id="map"></div>
+            </div>
+        </div>
+        <div class="form-section-column" style="margin-top: 100px;">
+            <div class="forms">
+                <form action="https://send.pageclip.co/5ifCRM0rsZykTzCIsmnZRGN74GSu1WH2/presenters" class="pageclip-form form" method="post"
+                    id="attending">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Nom" class="input" required />
+                        <input type="email" name="email" placeholder="Courriel" class="input" required />
+                        <div class="form-group">
+                            <textarea type="text" name="subject" placeholder="Message" class="input textarea"></textarea>
+                        </div>
+                        <button type="submit" class="pageclip-form__submit button text-primary uppercase">
+                            Envoyer
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <span>Suivez-nous - <a href="https://twitter.com/cabaneio" target="_blank"><i class="fa fa-twitter fa-2x"></i></a></span>
+    </footer>
+    <script async defer src="https://s.pageclip.co/v1/pageclip.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/izitoast/1.4.0/js/iziToast.min.js"></script>
     <script src="./script.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117489105-1"></script>
     <script>
@@ -116,6 +128,14 @@
 
         gtag('config', 'UA-117489105-1');
     </script>
+    <script>
+        function initMap() {
+            const location = {lat: 46.800860, lng: -71.224834};
+            const map = new google.maps.Map(document.getElementById('map'), {zoom: 15, center: location});
+            const marker = new google.maps.Marker({position: location, map: map});
+        }  
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApTqrF64e38YBcV3xXdN58kzSK3lp16H8&callback=initMap"></script>
 </body>
 
 </html>
