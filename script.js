@@ -22,3 +22,11 @@ iziToast.settings({
 })
 
 Pageclip.form(attendingForm, config)
+
+document.querySelector('.anchor-link').onclick = function(event) {
+  event.preventDefault()
+
+  document.querySelector(`section[name="${event.target.getAttribute('href')}"]`).scrollIntoView({
+    behavior: 'smooth'
+  })
+}
