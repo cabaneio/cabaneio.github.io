@@ -182,7 +182,6 @@ a {
 
 .section-cube.left {
   left: 0;
-  margin-left: 15vh;
 }
 
 .event-description {
@@ -274,6 +273,7 @@ button {
   line-height: 35px;
   position: absolute;
   right: 0;
+  cursor: pointer;
 }
 
 .pageclip-form__submit {
@@ -294,7 +294,7 @@ button {
 
 .map-container .text-fournary {
   padding-left: 30px;
-  padding-top: 20px;
+  padding-top: 30px;
 }
 
 #map {
