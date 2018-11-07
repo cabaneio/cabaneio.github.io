@@ -237,7 +237,7 @@ a {
   padding: 10vh;
 }
 
-.sponsors {
+.partners {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -247,12 +247,12 @@ a {
 }
 
 @media (max-width: 1200px) {
-  .sponsors {
+  .partners {
     flex-direction: column;
   }
 }
 
-.sponsor-block {
+.partner-block {
   background-color: #FAFAFA;
   width: 476px;
   height: 485px;
@@ -264,12 +264,12 @@ a {
   justify-content: center;
 }
 
-.sponsor-block img {
+.partner-block img {
   width: 260px;
 }
 
 @media (max-width: 800px) {
-  .sponsor-block {
+  .partner-block {
     width: 100%;
   }
 }
