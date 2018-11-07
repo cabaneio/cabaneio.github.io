@@ -8,7 +8,6 @@
   src: url("fonts/MontserratBlack.otf");
 }
 
-
 html {
   font-size: 2rem;
 }
@@ -31,7 +30,7 @@ p {
   text-align: center;
   padding: 2rem 0;
   position: relative;
-  font-family: "Montserrat Black";
+  font-family: "Montserrat Black", "Montserrat";
 }
 
 .header-name {
@@ -150,7 +149,6 @@ a {
 
 .uppercase {
   text-transform: uppercase;
-  text-shadow: 0px 0px 1px #000;
 }
 
 .align-left {
@@ -184,7 +182,7 @@ a {
 .section span {
   font-weight: 100;
   font-size: 0.8rem;
-  font-family: "Neue Helvetica";
+  font-family: "Neue Helvetica", "Helvetica";
   color: #495263;
 }
 
