@@ -95,7 +95,7 @@ strong {
 
 @media (max-width: 800px) {
   .h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 1.8rem;
   }
 
@@ -151,19 +151,6 @@ a {
   margin-top: 150px;
 }
 
-@media (max-width: 1200px) {
-  .section-cube {
-    display: none;
-  }
-}
-
-@media (max-width: 800px) {
-  .section {
-    padding: 0 3vh;
-    margin-top: 100px;
-  }
-}
-
 .section-no-right {
   padding-right: 0
 }
@@ -194,6 +181,23 @@ a {
 
 .section-cube.left {
   left: 0;
+}
+
+@media (max-width: 1200px) {
+  .section-cube {
+    display: none;
+  }
+}
+
+@media (max-width: 800px) {
+  .section {
+    padding: 0 3vh;
+    margin-top: 100px;
+  }
+
+  .section span {
+    font-size: 0.7rem;
+  }
 }
 
 .event-description {
