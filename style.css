@@ -43,6 +43,11 @@ p {
   margin-bottom: 20px;
 }
 
+.header h2 {
+  max-width: 800px;
+  margin-left: 0;
+}
+
 .bg-primary {
   background-color: #5B37B1;
 }
