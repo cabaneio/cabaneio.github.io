@@ -237,15 +237,21 @@ a {
   width: 476px;
   height: 485px;
   margin: 15px;
-  position: relative;
   display: inline-block;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .sponsor-block img {
   width: 260px;
-  position: absolute;
-  top: 189px;
-  left: 109px;
+}
+
+@media (max-width: 800px) {
+  .sponsor-block {
+    width: 100%;
+  }
 }
 
 .form-section {
