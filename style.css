@@ -150,6 +150,7 @@ a {
 
 .uppercase {
   text-transform: uppercase;
+  text-shadow: 0px 0px 1px #000;
 }
 
 .align-left {
