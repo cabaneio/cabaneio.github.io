@@ -21,8 +21,34 @@ p {
   display: inline;
 }
 
+.banner {
+  position: fixed;
+  height: 100px;
+  width: 100%;
+  z-index: 1;
+  background-color: #48C074;
+  font-family: "Montserrat Black", "Montserrat";
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+}
+
+.banner img {
+  height: 58.3px;
+  vertical-align: middle;
+  margin-left: 40px;
+}
+
+@media (max-width: 800px) {
+  .banner {
+    font-size: 0.8rem;
+  }
+}
+
 .header {
   min-height: 85vh;
+  margin-top: 100px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
