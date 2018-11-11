@@ -265,6 +265,55 @@ a {
 
 .event-conferences {
   padding: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.speaker-block {
+  width: 450px;
+  margin-bottom: 24px;
+}
+
+.speaker-block img {
+  height: 383px;
+  width: 374px;
+  margin-bottom: 29px;
+  box-shadow: -16px 14px 0px 0px;
+  color: #F9C907;
+}
+
+.speaker-block:nth-of-type(2n) img {
+  color: #F35564;
+}
+
+.speaker-block:nth-of-type(3n) img {
+  color: #48C074;
+}
+
+.speaker-block h4 {
+  font-size: 29.44px;
+  margin-bottom: 24px;
+  max-width: 75%;
+  float: right;
+}
+
+.speaker-block span {
+  color: white;
+  display: block;
+  margin: 2px 0;
+}
+
+@media (max-width: 800px) {
+  .speaker-block h4 {
+    float: none;
+    max-width: 100%;
+  }
+
+  .speaker-block img {
+    height: 270px;
+    width: 270px;
+  }
 }
 
 .partners {
