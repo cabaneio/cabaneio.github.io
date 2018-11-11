@@ -46,6 +46,12 @@ p {
   }
 }
 
+@media (max-width: 640px) {
+  .banner {
+    font-size: 0.6rem;
+  }
+}
+
 .header {
   min-height: 85vh;
   margin-top: 100px;
@@ -313,6 +319,17 @@ a {
   .speaker-block img {
     height: 270px;
     width: 270px;
+  }
+}
+
+@media (max-width: 640px) {
+  .speaker-block h4 {
+    font-size: 0.8rem;
+  }
+
+  .speaker-block img {
+    height: 200px;
+    width: 200px;
   }
 }
 
