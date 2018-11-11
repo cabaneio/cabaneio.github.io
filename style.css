@@ -28,10 +28,15 @@ p {
   z-index: 1;
   background-color: #48C074;
   font-family: "Montserrat Black", "Montserrat";
+  top: 0;
+}
+
+.banner a {
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;
-  top: 0;
+  height: 100%;
 }
 
 .banner img {
@@ -43,6 +48,14 @@ p {
 @media (max-width: 800px) {
   .banner {
     font-size: 0.8rem;
+  }
+
+  .banner a {
+    flex-direction: column;
+  }
+
+  .banner img {
+    margin-left: 0;
   }
 }
 
@@ -76,7 +89,6 @@ p {
 }
 
 .header h2 {
-  max-width: 800px;
   margin-left: 0;
 }
 
@@ -125,7 +137,7 @@ p {
 }
 
 .h3 {
-  font-size: 2rem;
+  font-size: 2.4rem;
   line-height: 2.3rem;
 }
 
@@ -200,7 +212,7 @@ a {
   position: relative;
   padding: 0 15vh;
   padding-bottom: 40px;
-  margin-top: 150px;
+  margin-top: 70px;
 }
 
 .section-no-right {
@@ -218,9 +230,9 @@ a {
 
 .section span {
   font-weight: 100;
-  font-size: 0.8rem;
+  font-size: 0.75rem;
   font-family: "Neue Helvetica", "Helvetica";
-  color: #495263;
+  color: #798293;
 }
 
 .section-cube {
@@ -308,6 +320,7 @@ a {
   color: white;
   display: block;
   margin: 2px 0;
+  font-weight: bold;
 }
 
 @media (max-width: 800px) {
