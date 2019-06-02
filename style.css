@@ -75,25 +75,55 @@ p {
   text-align: center;
   padding: 2rem 0;
   position: relative;
-  font-family: "Montserrat Black", "Montserrat";
-}
-
-.header-name {
-  position: absolute;
-  top: 30px;
-  left: 54px;
 }
 
 .header svg {
   margin-bottom: 20px;
 }
 
-.header h2 {
+.header h1 {
+  font-size: 5rem;
+  font-weight: 900;
+  font-family: "Montserrat Black", "Montserrat";
+  margin-bottom: 0.5rem;
+}
+
+.header .h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.header .h5 {
   margin-left: 0;
+  font-weight: 200;
+  margin: initial;
+}
+
+@media (max-width: 1000px) {
+  .header h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .header h1 {
+    font-size: 3rem;
+  }
+
+  .header .h3 {
+    font-size: 0.6rem;
+  }
+}
+
+@media (max-width: 640px) {
+  .header h1 {
+    font-size: 2rem;
+  }
 }
 
 .bg-primary {
-  background-color: #5B37B1;
+  background-color: #6836C9;
 }
 
 .bg-secondary {
