@@ -131,11 +131,7 @@ p {
 }
 
 .bg-ternary {
-  background-color: #f35564;
-}
-
-.bg-we-need-one-more-blue {
-  background-color: #363893;
+  background-color: #E8393E;
 }
 
 .bg-lets-add-some-green {
@@ -211,15 +207,19 @@ strong {
 }
 
 .text-ternary {
-  color: #f35564;
+  color: #E8393E;
 }
 
 .text-fournary { 
-  color: #5B37B1;
+  color: #373994;
 }
 
 a {
-  color: #363893;
+  text-decoration: none;
+}
+
+a, a:visited, a:hover, a:active {
+  color: inherit;
 }
 
 .lowercase {
@@ -262,7 +262,7 @@ a {
   font-weight: 100;
   font-size: 0.75rem;
   font-family: "Neue Helvetica", "Helvetica";
-  color: #798293;
+  color: #373737;
 }
 
 .section-cube {
@@ -294,20 +294,30 @@ a {
   }
 }
 
-.event-description {
-  margin: 10vh 5vh;
-  padding: 5vh;
-  margin-bottom: 2vh;
+.event-social-media {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
 }
 
-.event-description div.text-primary {
-  font-size: smaller;
-  margin-bottom: 0.5rm;
+.event-social-media img {
+  margin-bottom: 0.2rem;
+  width: 32%;
+  height: 32%;
+}
+
+@media (max-width: 1200px) {
+  .event-social-media img {
+    width: 49.5%;
+    height: 49.5%;
+  }
 }
 
 @media (max-width: 800px) {
-  .event-description {
-    margin: 10vh 0;
+  .event-social-media img {
+    width: 100%;
+    height: 100%;
   }
 }
 
