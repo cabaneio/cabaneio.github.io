@@ -23,6 +23,7 @@ iziToast.settings({
 
 Pageclip.form(attendingForm, config)
 
+/*
 document.querySelector('.anchor-link').onclick = function(event) {
   event.preventDefault()
 
@@ -30,3 +31,4 @@ document.querySelector('.anchor-link').onclick = function(event) {
     behavior: 'smooth'
   })
 }
+*/
