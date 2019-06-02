@@ -218,8 +218,18 @@ a {
   text-decoration: none;
 }
 
-a, a:visited, a:hover, a:active {
+.h1 a:visited,
+.h2 a:visited,
+.h3 a:visited,
+.h4 a:visited,
+.h5 a:visited,
+.h6 a:visited {
   color: inherit;
+}
+
+.link {
+  font-size: 0.75rem;
+  text-decoration: underline;
 }
 
 .lowercase {
