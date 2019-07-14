@@ -73,16 +73,19 @@ p {
   align-items: center;
   flex-direction: column;
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 5rem;
+  padding-top: 0;
   position: relative;
+  background: url('images/logos/header.svg') no-repeat;
+  padding-bottom: 14rem;
 }
 
-.header svg {
-  margin-bottom: 20px;
+.header .logo {
+  align-self: flex-start;
 }
 
 .header h1 {
-  font-size: 5rem;
+  font-size: 207px;
   font-weight: 900;
   font-family: "Montserrat Black", "Montserrat";
   margin-bottom: 0.5rem;
@@ -90,14 +93,21 @@ p {
 
 .header .h3 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 31.5px;
   font-weight: 600;
 }
 
 .header .h5 {
   margin-left: 0;
-  font-weight: 200;
+  font-size: 31.5px;
+  font-weight: 600;
   margin: initial;
+}
+
+@media (max-width: 1200px) {
+  .header h1 {
+    font-size: 5rem;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -122,22 +132,6 @@ p {
   }
 }
 
-.bg-primary {
-  background-color: #6836C9;
-}
-
-.bg-secondary {
-  background-color: #f8c80c;
-}
-
-.bg-ternary {
-  background-color: #E8393E;
-}
-
-.bg-lets-add-some-green {
-  background-color: #48C074;
-}
-
 .block {
   display: block;
 }
@@ -149,7 +143,8 @@ p {
 .h5,
 .h6 {
   margin: auto;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+  font-family: "Montserrat Black", "Montserrat";
 }
 
 .h1 {
@@ -163,8 +158,7 @@ p {
 }
 
 .h3 {
-  font-size: 2.4rem;
-  line-height: 2.3rem;
+  font-size: 2.6rem;
 }
 
 .h4 {
@@ -172,7 +166,7 @@ p {
 }
 
 .h5 {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .h6 {
@@ -203,19 +197,15 @@ strong {
 }
 
 .text-secondary {
-  color: #f8c80c;
+  color: #f7ae00;
 }
 
 .text-ternary {
-  color: #E8393E;
+  color: #eb3f35;
 }
 
 .text-fournary { 
   color: #373994;
-}
-
-a {
-  text-decoration: none;
 }
 
 .h1 a:visited,
@@ -251,16 +241,11 @@ a {
 .section {
   position: relative;
   padding: 0 15vh;
-  padding-bottom: 40px;
-  margin-top: 70px;
+  padding-bottom: 4rem;
 }
 
 .section-no-right {
   padding-right: 0
-}
-
-.section-container {
-  max-width: 600px;
 }
 
 .section-container.right {
@@ -270,9 +255,14 @@ a {
 
 .section span {
   font-weight: 100;
-  font-size: 0.75rem;
-  font-family: "Neue Helvetica", "Helvetica";
-  color: #373737;
+  font-size: 0.8rem;
+  font-family: "Helvetica";
+  color: #1F1F1F;
+  letter-spacing: -0.18px;
+}
+
+.section span.text-primary {
+  color: white;
 }
 
 .section-cube {
@@ -304,6 +294,31 @@ a {
   }
 }
 
+.infos {
+  margin-left: 10rem;
+  padding-top: 2rem;
+}
+
+.infos .text-primary {
+  font-family: "Montserrat Black", "Montserrat";
+}
+
+@media (max-width: 1200px) {
+  .infos .h5 {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .infos {
+    padding-top: 1rem;
+  }
+
+  .infos .h5 {
+    font-size: 1rem;
+  }
+}
+
 .event-social-media {
   display: flex;
   justify-content: space-between;
@@ -332,23 +347,43 @@ a {
 }
 
 .event-conferences {
-  padding: 10vh;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
+  justify-content: space-between;
+  margin-top: 8rem;
+}
+
+@media (max-width: 1200px) {
+  .event-conferences {
+    justify-content: center;
+  }
+}
+
+.conferences-header {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8rem;
+}
+
+@media (max-width: 1200px) {
+  .conferences-header {
+    flex-wrap: wrap;
+  }
 }
 
 .speaker-block {
-  width: 450px;
+  width: 420px;
   margin-bottom: 24px;
 }
 
 .speaker-block img {
   height: 383px;
   width: 374px;
-  margin-bottom: 29px;
+  margin-bottom: 43px;
   box-shadow: -16px 14px 0px 0px;
   color: #F9C907;
+  border-radius: 13px;
 }
 
 .speaker-block:nth-of-type(2n) img {
@@ -356,21 +391,26 @@ a {
 }
 
 .speaker-block:nth-of-type(3n) img {
-  color: #48C074;
+  color: #373994;
+}
+
+.speaker-block:nth-of-type(4n) img {
+  color: #E64F21;
 }
 
 .speaker-block h4 {
   font-size: 29.44px;
+  letter-spacing: -0.21px;
   margin-bottom: 24px;
-  max-width: 75%;
   float: right;
+  max-width: 93%;
 }
 
 .speaker-block span {
-  color: white;
   display: block;
   margin: 2px 0;
   font-weight: bold;
+  font-size: 0.7rem;
 }
 
 @media (max-width: 800px) {
