@@ -298,6 +298,7 @@ strong {
   .section {
     padding: 0 3vh;
     margin-top: 100px;
+    padding-bottom: 4rem;
   }
 
   .section span {
@@ -310,7 +311,7 @@ strong {
   padding-top: 2rem;
 }
 
-.infos .text-primary {
+.infos .text-secondary {
   font-family: "Montserrat Black", "Montserrat";
 }
 
@@ -363,7 +364,7 @@ strong {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 8rem;
+  margin-top: 6rem;
 }
 
 @media (max-width: 1200px) {
@@ -381,6 +382,18 @@ strong {
 @media (max-width: 1200px) {
   .conferences-header {
     flex-wrap: wrap;
+  }
+}
+
+.section.conferences {
+  background: url('images/logos/conference.svg') no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .section.conferences {
+    background: linear-gradient(166.79deg, #6838C9 0%, #eb3f35 100%);
+    margin-top: 0;
+    padding-top: 100px;
   }
 }
 
@@ -445,6 +458,16 @@ strong {
   .speaker-block img {
     height: 200px;
     width: 200px;
+  }
+}
+
+.section.sponsors {
+  background: url('images/logos/sponsors.svg') no-repeat;
+}
+
+@media (max-width: 1200px) {
+  .section.sponsors {
+    padding-top: 1rem;
   }
 }
 
