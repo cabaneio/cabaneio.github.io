@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1874px" height="1691px" viewBox="0 0 1874 1691" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="4.35940993%" y1="-14.8120557%" x2="51.5682328%" y2="53.2500031%" id="linearGradient-1">
+            <stop stop-color="#6836C9" offset="0%"></stop>
+            <stop stop-color="#6836C9" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="137.027653%" y1="137.210494%" x2="21.4298127%" y2="41.5883534%" id="linearGradient-2">
+            <stop stop-color="#FA6400" offset="0%"></stop>
+            <stop stop-color="#E8393E" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cabane.io-Copy-17" transform="translate(-26.000000, -1665.000000)">
+            <g id="Group-6" transform="translate(0.000000, 1634.000000)">
+                <path d="M1064.29148,1209.15772 C1098.96772,1252.14883 1171.84652,1287 1227.0735,1287 L2023.00486,1287 C2078.23065,1287 2095.18473,1251.92095 2060.86539,1208.63935 L1189.21297,109.360655 C1154.89698,66.0832602 1082.30213,31 1027.08081,31 L213.997553,31 C158.770429,31 142.102978,65.8416689 176.786883,108.842276 L1064.29148,1209.15772 Z" id="Path-2-Copy-2" fill="url(#linearGradient-1)"></path>
+                <path d="M31.7933322,1656.1894 C14.2343597,1708.55185 41.7977362,1734.9538 93.3520391,1715.16204 L2138.662,929.965049 C2190.21891,910.172289 2245.82382,851.546763 2262.86734,798.995683 L2491.1467,95.1314049 C2508.18651,42.5917807 2480.20119,16.0466132 2428.63674,35.8422701 L394.650422,816.692099 C343.087316,836.487238 287.052715,894.982773 269.493828,947.344968 L31.7933322,1656.1894 Z" id="Path-3-Copy" fill="url(#linearGradient-2)"></path>
+            </g>
+        </g>
+    </g>
+</svg>

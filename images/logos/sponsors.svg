@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1299px" height="1525px" viewBox="0 0 1299 1525" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.2 (78181) - https://sketchapp.com -->
+    <title>Path 1 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="8.64085591%" y1="-113.427752%" x2="60.1521937%" y2="77.2132594%" id="linearGradient-1">
+            <stop stop-color="#FA6400" offset="0%"></stop>
+            <stop stop-color="#F7B500" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Cabane.io-Copy-17" transform="translate(0.000000, -3430.000000)" fill="url(#linearGradient-1)">
+            <path d="M525.95643,3462.65069 C491.15206,3419.7654 434.966782,3419.96963 400.476191,3463.09048 L-334.538648,4382.02128 C-369.0351,4425.14946 -369.351034,4495.32707 -335.249664,4538.76054 L-34.8622778,4921.35122 C-0.758509139,4964.78774 55.2315329,4965.35238 90.2052088,4922.59987 L406.574892,4535.86335 C441.543989,4493.11644 497.224972,4493.92963 530.933904,4537.66934 L826.196877,4920.79388 C859.909366,4964.53821 915.875599,4965.59012 951.20749,4923.13553 L1272.03125,4537.63564 C1307.36021,4495.18456 1307.787,4426.00764 1272.98111,4383.12048 L525.95643,3462.65069 Z" id="Path-1-Copy"></path>
+        </g>
+    </g>
+</svg>

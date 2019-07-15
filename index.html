@@ -35,151 +35,83 @@
 </head>
 
 <body>
-    <!--<div class="banner">
-        <a href="https://www.eventbrite.ca/e/billets-cabaneio-45779258996" target="_blank">
+    <div class="banner">
+        <a href="https://www.eventbrite.ca/e/billets-cabaneio-september-2019-65140424764" target="_blank">
             <span class="uppercase text-primary">Achetez votre billet maintenant!</span>
             <img src="images/eventbrite.png">
         </a>
-    </div>-->
-    <header class="header bg-primary">
-        <div style="display: flex; flex-direction: column; padding: 0 3vh;">
-            <div style="display: flex; justify-content: space-between; align-items: baseline;">
-                <svg width="183px" height="114px" viewBox="0 0 183 114">
-                    <g id="Page-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                        <g id="Cabane.io-Copy-6" transform="translate(-505.000000, -253.000000)">
-                            <g id="logo-2-copy" transform="translate(505.000000, 253.000000)">
-                                <polygon id="Path-3" fill="#373994" points="30 114 152.670173 114 183 76.5 60.9509346 76.5"></polygon>
-                                <polygon id="Path-1" fill="#E8393E" points="60.6620685 0 0 75.8902415 29.902086 114 61.1526557 75.7738745 90.5932982 114 122.25 75.9367883"></polygon>
-                                <polygon id="Path-2" fill="#F8BC02" points="122.397003 76.5 183 76.5 122.397003 0 60.75 0"></polygon>
-                            </g>
-                        </g>
-                    </g>
-                </svg>
-                <h2 class="h3 text-primary align-right uppercase">Automne 2019</h2>
-            </div>
-            <h1 class="uppercase text-primary align-left">Cabane<span class="text-secondary">.IO</span></h1>
+    </div>
+    <header class="header">
+        <img class="logo" src="images/logos/logo.svg">
+        <div style="display: flex; flex-direction: column;">
+            <h2 class="h3 text-primary uppercase align-left">28 septembre 2019</h2>
+            <h1 class="uppercase text-primary align-left">Cabane.IO</h1>
             <h2 class="h5 text-primary align-right uppercase">La conférence pour</h2>
             <h2 class="h5 text-primary align-right uppercase">développeurs à Québec</h2>
         </div>
     </header>
     <section class="section">
-        <div class="section-cube bg-ternary"></div>
         <div class="section-container">
-            <h2 class="h3 text-ternary align-left uppercase">
-                <a href="https://www.instagram.com/cabane_io/">
-                    @cabane_io
-                </a>
-            </h2>
+            <h2 class="h3 text-ternary align-left uppercase">Nous sommes des passionnés</h2>
         </div>
-        <div class="section-container">
-            <span>
-                La première édition de Cabane.IO fut un franc succès, un énorme merci à tous les participants! Revenez-nous cet automne, nous travaillons très fort pour vous offrir une deuxième édition qui saura vous combler.
-                Entre temps, vous pouvez <a class="text-fournary link" href="https://www.youtube.com/channel/UCHh1T6-UMXfTbecQv_fLVSA">revisionner l'édition 2018</a>.
-            </span>
-        </div>
-        <div class="event-social-media">
-            <img src="https://instagram.fymy1-1.fna.fbcdn.net/vp/fc333e9165c026eec836c9ef6a2e527c/5D86F1D3/t51.2885-15/e35/49907366_2298628653689688_1988410327708338050_n.jpg?_nc_ht=instagram.fymy1-1.fna.fbcdn.net">
-            <img src="https://instagram.fymy1-1.fna.fbcdn.net/vp/8e606c7b02b149498b761bdfce616809/5D840A86/t51.2885-15/e35/50066054_360260184558016_4377494783145115701_n.jpg?_nc_ht=instagram.fymy1-1.fna.fbcdn.net">
-            <img src="https://instagram.fymy1-1.fna.fbcdn.net/vp/a3fa478ec7951fffacfc6f16ae2938e3/5D7D89C6/t51.2885-15/e35/49907460_752553521777470_3655964413342049705_n.jpg?_nc_ht=instagram.fymy1-1.fna.fbcdn.net">
+        <div id="event-description" class="section-container">
+            <span>Cabane.io, c'est une journée dédiée à nous, les développeurs de la ville de Québec. Viens échanger avec tes confrères sur une multitude de sujets dans une ambiance festive! Le prix inclut le dîner et peut-être quelques surprises...</span>
         </div>
     </section>
-    <!--
-    <section class="section section-no-right">
-        <div style="display: flex; flex-direction: row; flex-wrap: wrap; margin-bottom: 10px;">
-            <div class="section-container" style="margin-right: 80px;">
-                <h2 class="h3 text-ternary align-left uppercase">Les conférences</h2>
+    <section class="section conferences">
+        <div class="infos uppercase">
+            <div class="text-secondary">Date</div>
+            <div class="h5 text-primary">28 septembre 2019</div>
+            <div class="text-secondary">Prix</div>
+            <div class="h5 text-primary">30$</div>
+            <div class="text-secondary">Endroit</div>
+            <div class="h5 text-primary">Manège militaire</div>
+        </div>
+        <div class="conferences-header">
+            <div class="section-container" style="display: flex; align-items: center; margin-right: 90px;">
+                <h2 class="h3 text-secondary align-left uppercase">Les conférences</h2>
             </div>
             <div class="section-container">
                 <div>
-                    <span>Des conférences couvrant tous les domaines - frontend, backend, devops, machine learning...</span>
-                </div>
-                <div style="font-size: 23px; margin-top: 15px;">
-                    <a class="uppercase anchor-link" href="register">Devenir conférencier</a>
+                    <span class="text-primary">Des conférences couvrant tous les domaines - frontend, backend, devops, machine learning...</span>
+                    <div style="font-size: 23px; margin-top: 15px;">
+                        <a class="uppercase anchor-link text-primary" href="register">Devenir conférencier</a>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="bg-primary event-conferences">
-            <h2 class="h5 uppercase text-primary">À venir...</h2>
+        <div class="event-conferences">
             <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">React, à l'échelle entreprise</h4>
-                <img src="images/speakers/will.jpg">
-                <span>William Fortin</span>
-                <span>Pleo</span>
-            </div>
-            <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">Code revue comme un pro</h4>
-                <img src="images/speakers/maaube.jpg">
-                <span>Marc-Antoine Aubé</span>
-                <span>Poka</span>
-            </div>
-            <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">Architecture Kappa sur AWS</h4>
-                <img src="images/speakers/joey.jpg">
-                <span>Joey Bolduc-Gilbert</span>
-                <span>XpertSea</span>
-            </div>
-            <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">Construire son Provider Terraform</h4>
-                <img src="images/speakers/coveos.jpg">
-                <span>André Thériault/Maxime Coulombe</span>
-                <span>Coveo</span>
-            </div>
-            <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">Réseau de neurones en Python</h4>
-                <img src="images/speakers/carlchouinard.png">
-                <span>Carl Chouinard</span>
-                <span>Vooban</span>
-            </div>
-            <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">Elixir, remède fonctionnel au Web</h4>
-                <img src="images/speakers/guicauchon.jpg">
-                <span>Guillaume Cauchon</span>
+                <h4 class="uppercase">Kotlin.also { it.target = [web, ios, android] }</h4>
+                <img src="images/speakers/mgagnon.jpg">
+                <span>Martin Gagnon</span>
                 <span>Mirego</span>
             </div>
             <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">Personnalisation avec VueJS</h4>
-                <img src="images/speakers/jstremblay.jpg">
-                <span>Jean-Sébastien Tremblay</span>
-                <span>Snipcart</span>
+                <h4 class="uppercase">WebRTC, considérations mobiles et voix sur IP</h4>
+                <img src="images/speakers/will.jpg">
+                <span>William Lauzé</span>
+                <span>LogMeIn</span>
             </div>
             <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">Déploiement avec Kubeflow</h4>
-                <img src="images/speakers/mdamours.jpg">
-                <span>Mathieu D'Amours</span>
-                <span>Braver</span>
-            </div>
-            <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">Templating avec Lit-Html</h4>
-                <img src="images/speakers/phil.png">
-                <span>Philippe Desjardins</span>
-                <span>XpertSea</span>
-            </div>
-            <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">IoT to Server to Webs socket</h4>
-                <img src="images/speakers/seblegare.png">
-                <span>Sébastien Légaré</span>
-                <span>Vooban</span>
-            </div>
-            <div class="speaker-block text-primary align-right">
-                <h4 class="uppercase">Ne pas s'oxider avec Rust</h4>
-                <img src="images/speakers/pastjean.jpg">
-                <span>Pierre-Alexandre St-Jean</span>
-                <span>Pleo</span>
+                <h4 class="uppercase">Passer de 5,000 requêtes à 50,000,000 par jour</h4>
+                <img src="images/speakers/andy.jpg">
+                <span>Andy Emond</span>
+                <span>Coveo</span>
             </div>
         </div>
     </section>
-    <section class="section">
-        <div class="section-cube left bg-lets-add-some-green"></div>
-        <div class="section-container right">
-            <h2 class="h3 text-ternary uppercase">Nos sponsors</h2>
+    <section class="section sponsors">
+        <div class="section-container align-right right">
+            <h2 class="h3 text-fournary uppercase">Nos sponsors</h2>
         </div>
-        <div class="section-container right">
+        <div class="section-container align-right right">
             <span>Un énorme merci à nos sponsors sans qui cette journée ne pourrait pas être possible. Venez les voir lors de la conférence, ils ont certainement plus d'un poste à combler!</span>
         </div>
         <div class="partners">
             <div class="partner-block">
-                <a href="https://careers.pleo.io/" target="_blank">
-                    <img src="images/pleo.png">
+                <a href="https://www.logmeininc.com/careers" target="_blank">
+                    <img src="images/logmein.png">
                 </a>
             </div>
             <div class="partner-block">
@@ -188,37 +120,49 @@
                 </a>
             </div>
             <div class="partner-block">
-                <a href="https://fr.xpertsea.com/" target="_blank">
-                    <img style="top: 145px;width: 290px;left: 90px;" src="images/xpertsea.png">
+                <a href="https://vie.mirego.com/fr/postes-disponibles" target="_blank">
+                    <img src="images/mirego.png">
                 </a>
             </div>
             <div class="partner-block">
-                <a href="https://www.victrix.ca/" target="_blank">
-                    <img src="images/victrix.svg">
+                <a href="https://careers.pleo.io/" target="_blank">
+                    <img src="images/pleo.png">
+                </a>
+            </div>
+            <div class="partner-block">
+                <a href="https://robotiq.com/fr/a-propos/carrieres" target="_blank">
+                    <img src="images/robotiq.jpeg">
+                </a>
+            </div>
+            <div class="partner-block">
+                <a href="https://www.nexapp.ca/career/#fr" target="_blank">
+                    <img src="images/nexapp.jpg">
+                </a>
+            </div>
+            <div class="partner-block">
+                <a href="https://dashthis.com/jobs/" target="_blank">
+                    <img src="images/dashthis.png">
                 </a>
             </div>
         </div>
     </section>
-    -->
     <section class="section form-section" name="register" style="margin-bottom: 2rem;">
         <div class="form-section-column">
             <div class="section-container">
-                <h2 class="h3 text-fournary align-left uppercase">Vous êtes intéressé?</h2>
+                <h2 class="h3 text-ternary align-left uppercase">Vous êtes intéressé?</h2>
             </div>
             <div class="section-container">
                 <span>
-                    Nous recherchons des présentateurs et bénévoles pour la deuxième édition. Laissez-nous savoir votre intérêt afin de rendre cette deuxième itération inoubliable!
+                    Vous désirez vous impliquer dans l'évènment ou simplement nous contacter? Laissez-nous votre nom et email et nous vous répondrons le plus rapidement possible!
                 </span>
             </div>
-            <!--
             <div class="map-container">
-                <div class="bg-secondary text-fournary">
+                <div class="map-inner text-primary">
                     <i class="fa fa-map-marker fa-3x"></i>
-                    <h2 class="h5 align-left uppercase" style="font-size: 30px;margin-top: 20px;max-width: 240px;">Voir la carte</h2>
+                    <h2 class="h5 align-left uppercase" style="font-size: 30px;margin-top: 20px; max-width: 240px;">Voir la carte</h2>
                 </div>
                 <div id="map"></div>
             </div>
-            -->
         </div>
         <div class="form-section-column" style="margin-top: 100px;">
             <div class="forms">
@@ -263,16 +207,14 @@
 
         gtag('config', 'UA-117489105-1');
     </script>
-    <!--
     <script>
         function initMap() {
-            const location = {lat: 46.800860, lng: -71.224834};
+            const location = {lat: 46.8060729, lng: -71.2158083};
             const map = new google.maps.Map(document.getElementById('map'), {zoom: 15, center: location});
             const marker = new google.maps.Marker({position: location, map: map});
         }  
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApTqrF64e38YBcV3xXdN58kzSK3lp16H8&callback=initMap"></script>
-    -->
 </body>
 
 </html>
