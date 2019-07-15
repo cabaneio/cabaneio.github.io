@@ -387,7 +387,8 @@ strong {
 }
 
 .section.conferences {
-  background: url('images/logos/conference.svg') no-repeat;
+  background: url('images/logos/conference.svg') no-repeat center center;
+  background-size: cover;
 }
 
 @media (max-width: 1580px) {
