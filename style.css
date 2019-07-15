@@ -83,7 +83,7 @@ p {
   position: relative;
   background: url('images/logos/header.svg') no-repeat center center;
   background-size: cover;
-  padding-bottom: 15rem;
+  padding-bottom: 20rem;
 }
 
 .header .logo {
