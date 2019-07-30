@@ -431,6 +431,9 @@ strong {
   margin-bottom: 24px;
   float: right;
   max-width: 93%;
+  height: 116px;
+  display: flex;
+  align-items: center;
 }
 
 .speaker-block span {
