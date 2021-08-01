@@ -46,19 +46,177 @@
 
     <link
       rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" sizes="16x16" href="/favicon.ico?v=2" />
+
+    <script>
+      function displayMenu() {
+        const body = document.getElementsByTagName("body")[0];
+        body.classList.toggle("with-menu");
+
+        const menu = document.getElementsByClassName("menu-responsive")[0];
+        menu.classList.toggle("hidden");
+      }
+    </script>
   </head>
 
   <body>
-    <div class="flex center column logo-container">
+    <div class="menu-responsive hidden">
+      <div class="menu-item">Billets</div>
+      <div class="menu-item">Boutique</div>
+      <div class="menu-item"><a href="mailto:info@cabane.io">Contact</a></div>
+    </div>
+    <div class="flex header logo-container">
       <img class="flex logo" src="images/logo.svg"></img>
       <h1 class="bold">Cabane</h1>
-      <h3>4 septembre 2021</h3>
-      <h6>À venir très bientôt...</h6>
+    </div>
+    <div class="menu-button" onclick="displayMenu()">
+      <div class="menu-item">Menu</div>
+    </div>
+    <div class="flex column menu">
+      <div class="menu-item">Billets</div>
+      <div class="menu-item">Boutique</div>
+      <div class="menu-item"><a href="mailto:info@cabane.io">Contact</a></div>
+    </div>
+    <div class="flex column section">
+      <h6>Où et quand?</h6>
+      <div class="medium paragraph">
+        <div>Samedi le quatre septembre</div>
+        <div>deux milles vingt et un</div>
+        <div>au <a href="https://goo.gl/maps/XYD7qjswCu3jTHiE6" target="_blank">Manège Millitaire.</a></div>
+      </div>
+    </div>
+    <div class="flex column section">
+      <h6>Journée dédiée à nous, les développeurs de la ville de Québec</h6>
+      <div class="medium paragraph">
+        Viens échanger sur une multitude de sujets dans une ambiance festive. 
+      </div>
+    </div>
+    <div class="flex column section speakers">
+      <h6>Les conférences</h6>
+      <div class="flex inner">
+        <div class="speaker-box">
+          <img src="images/speakers/remi.jpg"></img>
+          <div class="flex column speaker-text">
+            <div class="bold speaker-title">Bâtir une culture d'engineering robuste et explicite</div>
+            <div class="speaker-desc">Rémi Prévost</div>
+            <div class="speaker-desc">Mirego</div>
+          </div>
+        </div>
+        <div class="speaker-box">
+          <img src="images/speakers/karol.jpg"></img>
+          <div class="flex column speaker-text">
+            <div class="bold speaker-title">Simplifier le développement de microservices avec Dapr</div>
+            <div class="speaker-desc">Karol Deland</div>
+            <div class="speaker-desc">InCycle Software</div>
+          </div>
+        </div>
+        <div class="speaker-box">
+          <img src="images/speakers/william.jpg"></img>
+          <div class="flex column speaker-text">
+            <div class="bold speaker-title">DesignOps</div>
+            <div class="speaker-desc">William Fortin</div>
+            <div class="speaker-desc">Pleo</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex column section sponsors">
+      <h6>Nos sponsors</h6>
+      <div class="medium paragraph">
+        Un énorme merci à nos sponsors sans qui cette journée ne pourrait pas être possible.
+      </div>
+      <div class="flex logo-container">
+        <img class="flex logo" src="images/logo-gold.svg"></img>
+        <h1 class="bold gold">Or</h1>
+      </div>
+      <div class="flex inner">
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/logmein.png"></img>
+        </div>
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/coveo.png"></img>
+        </div>
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/mirego.png"></img>
+        </div>
+      </div>
+      <div class="flex logo-container">
+        <img class="flex logo" src="images/logo-silver.svg"></img>
+        <h1 class="bold silver">Argent</h1>
+      </div>
+      <div class="flex inner">
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/vooban.png"></img>
+        </div>
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/snipcart.png"></img>
+        </div>
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/crakmedia.png"></img>
+        </div>
+      </div>
+      <div class="flex inner">
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/pleo.png"></img>
+        </div>
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/dashthis.png"></img>
+        </div>
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/oxio.png"></img>
+        </div>
+      </div>
+      <div class="flex inner">
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/nexapp.png"></img>
+        </div>
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/kimoby.png"></img>
+        </div>
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/botpress.png"></img>
+        </div>
+      </div>
+      <div class="flex logo-container">
+        <img class="flex logo" src="images/logo-bronze.svg"></img>
+        <h1 class="bold bronze">Bronze</h1>
+      </div>
+      <div class="flex inner">
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/42quebec.png" style="width: 150px;"></img>
+        </div>
+        <div class="flex center sponsor">
+          <img class="sponsorlogo" src="images/sponsors/unicorn.png"></img>
+        </div>
+      </div>
+    </div>
+    <div class="flex column section">
+      <h6>Suivez-nous!</h6>
+      <div class="flex">
+        <div class="social-link">
+          <a href="https://join.slack.com/t/cabane-io/shared_invite/zt-6k4pey50-MpKULjBFybAasn0lRgxlhQ"><i class="fab fa-slack-hash fa-2x"></i></a>
+        </div>
+        <div class="social-link">
+          <a href="https://www.facebook.com/cabaneio"><i class="fab fa-facebook fa-2x"></i></a>
+        </div>
+        <div class="social-link">
+          <a href="https://www.linkedin.com/company/cabaneio/about"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <div class="social-link">
+          <a href="https://www.youtube.com/channel/UCHh1T6-UMXfTbecQv_fLVSA"><i class="fab fa-youtube fa-2x"></i></a>
+        </div>
+        <div class="social-link">
+          <a href="https://twitter.com/cabaneio"><i class="fab fa-twitter fa-2x"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="flex center column footer">
+      <img class="flex logo" src="images/logo.svg"></img>
+      <h2 class="bold">Cabane</h2>
     </div>
     <script
       async

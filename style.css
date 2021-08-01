@@ -1,11 +1,11 @@
 @font-face {
-  font-family: "Montserrat Black";
-  src: url("fonts/MontserratBlack.otf");
+  font-family: "Euclid Circular B";
+  src: url("fonts/EuclidCircularB-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Euclid Circular B";
-  src: url("fonts/EuclidCircularB-Light.ttf");
+  font-family: "EuclidCircularB-Medium";
+  src: url("fonts/EuclidCircularB-Medium.ttf");
 }
 
 @font-face {
@@ -15,7 +15,15 @@
 
 html {
   font-size: 2rem;
-  overflow: hidden;
+}
+
+html,
+body {
+  overscroll-behavior: none;
+}
+
+html,
+a {
   color: white;
 }
 
@@ -24,20 +32,49 @@ button {
   font-family: "Euclid Circular B";
 }
 
-.bold {
-  font-family: "EuclidCircularB-SemiBold";
+.medium {
+  font-family: "EuclidCircularB-Medium";
 }
 
-html,
-body {
-  height: 100%;
-  width: 100%;
+.bold {
+  font-family: "EuclidCircularB-SemiBold";
 }
 
 body {
   background: url("images/bg.png") no-repeat;
   background-size: cover;
-  overflow: auto;
+  padding: 38px;
+}
+
+.menu {
+  position: absolute;
+  top: 38px;
+  right: 38px;
+  text-align: right;
+  font-size: 28px;
+}
+
+.menu-item {
+  margin-bottom: 10px;
+}
+
+.menu-button {
+  display: none;
+}
+
+.menu-responsive {
+  background-color: black;
+  width: 100%;
+  margin-left: -38px;
+  margin-top: -38px;
+  padding: 38px;
+  top: 38px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.menu-responsive.hidden {
+  display: none;
 }
 
 .flex {
@@ -54,26 +91,203 @@ body {
 }
 
 .logo-container {
-  width: 100%;
-  height: 100%;
+  align-items: center;
+  margin-bottom: 158px;
 }
 
 .logo {
-  width: 300px;
-  height: 60px;
+  margin-right: 21px;
 }
 
 h1 {
-  font-size: 3rem;
-  margin: 10px;
+  font-size: 4rem;
 }
 
-h3 {
-  margin-top: 20px;
-  font-size: 0.7rem;
+h2 {
+  font-size: 76px;
 }
 
 h6 {
-  margin-top: 20px;
-  font-size: 0.5rem;
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.paragraph {
+  font-size: 84px;
+  max-width: 1140px;
+}
+
+.section {
+  margin-bottom: 60px;
+}
+
+.speakers {
+  margin-bottom: 200px;
+}
+
+.inner {
+  flex-wrap: wrap;
+}
+
+.sponsors {
+  margin-bottom: 200px;
+}
+
+.sponsors .paragraph {
+  margin-bottom: 170px;
+}
+
+.sponsors .logo-container {
+  margin-bottom: 34px;
+}
+
+.sponsors .gold {
+  color: #a2845e;
+}
+
+.sponsors .silver {
+  color: #98989d;
+}
+
+.sponsors .bronze {
+  color: #a2755e;
+}
+
+.speaker-box,
+.sponsor {
+  margin-right: 60px;
+}
+
+.speaker-box {
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 302px;
+  height: 487px;
+  padding: 26px 29px;
+  margin-bottom: 15px;
+}
+
+.speaker-box img {
+  width: 301px;
+  height: 308px;
+}
+
+.speaker-text {
+  margin-top: 41px;
+  color: #131313;
+  text-align: right;
+}
+
+.speaker-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.speaker-desc {
+  font-size: 20px;
+}
+
+.sponsor {
+  width: 260px;
+  height: 229px;
+}
+
+.sponsorlogo {
+  width: 195px;
+}
+
+.social-link {
+  margin-right: 55px;
+}
+
+.footer {
+  margin-top: 110px;
+  margin-bottom: 163px;
+}
+
+.footer .logo {
+  height: 45px;
+  width: 49px;
+  margin-right: 0;
+}
+
+@media screen and (min-width: 800px) {
+  .menu-responsive {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    padding: 20px;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .menu-button {
+    display: flex;
+    position: absolute;
+    top: 38px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  body.with-menu .menu-button {
+    top: 225px;
+  }
+
+  h1 {
+    font-size: 65px;
+  }
+
+  .header {
+    flex-direction: column;
+  }
+
+  .logo-container {
+    margin-bottom: 58px;
+  }
+
+  .logo {
+    height: 39px;
+    width: 42px;
+  }
+
+  .header .logo {
+    margin-right: 0;
+  }
+
+  .paragraph {
+    font-size: 32px;
+  }
+
+  .inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .speaker-box,
+  .sponsor {
+    margin-right: 0;
+  }
+
+  .sponsors .paragraph {
+    margin-bottom: 150px;
+  }
+
+  .speakers,
+  .sponsors {
+    margin-bottom: 100px;
+  }
+
+  .sponsors .logo-container {
+    justify-content: center;
+  }
+
+  .social-link {
+    margin-right: 20px;
+    font-size: 25px;
+  }
 }
