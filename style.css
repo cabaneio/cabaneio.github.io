@@ -239,7 +239,8 @@ h6 {
     top: 225px;
   }
 
-  h1 {
+  h1,
+  h2 {
     font-size: 65px;
   }
 
@@ -251,7 +252,8 @@ h6 {
     margin-bottom: 58px;
   }
 
-  .logo {
+  .logo,
+  .footer .logo {
     height: 39px;
     width: 42px;
   }
@@ -290,5 +292,9 @@ h6 {
   .social-link {
     margin-right: 20px;
     font-size: 25px;
+  }
+
+  .fa-2x {
+    font-size: 1.5em;
   }
 }
