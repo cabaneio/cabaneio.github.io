@@ -171,6 +171,15 @@ h6 {
   margin-bottom: 15px;
 }
 
+.speaker-box.double {
+  width: 724px;
+}
+
+.speaker-box .double-inner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .speaker-box img {
   width: 301px;
   height: 308px;
@@ -281,6 +290,15 @@ h6 {
   .speaker-box,
   .sponsor {
     margin-right: 0;
+  }
+
+  .speaker-box.double {
+    width: 302px;
+    height: 774px;
+  }
+
+  .speaker-box .double-inner {
+    flex-wrap: wrap;
   }
 
   .sponsors .paragraph {
